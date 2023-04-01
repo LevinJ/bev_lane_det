@@ -7,10 +7,10 @@ from loader.bev_road.openlane_data import OpenLane_dataset_with_offset,OpenLane_
 from models.model.single_camera_bev import BEV_LaneDet
 
 ''' data split '''
-train_gt_paths = '/dataset/openlane/lane3d_1000/training'
-train_image_paths = '/dataset/openlane/images/training'
-val_gt_paths = '/dataset/openlane/lane3d_1000/validation'
-val_image_paths = '/dataset/openlane/images/validation'
+train_gt_paths = '/home/levin/workspace/data/lanes/lane3d_1000_v1.2/lane3d_1000/training'
+train_image_paths = '/home/levin/workspace/data/lanes/images/training'
+val_gt_paths = '/home/levin/workspace/data/lanes/lane3d_1000_v1.2/lane3d_1000/validation'
+val_image_paths = '/home/levin/workspace/data/lanes/images/validation'
 
 model_save_path = "/dataset/model/openlane"
 

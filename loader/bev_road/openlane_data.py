@@ -310,8 +310,11 @@ class OpenLane_dataset_with_offset_val(Dataset):
 if __name__ == "__main__":
     ''' parameter from config '''
     from utils.config_util import load_config_module
-    config_file = '/mnt/ve_perception/wangruihao/code/BEV-LaneDet/tools/openlane_config.py'
+    config_file = '/home/levin/workspace/lanedect/bev_lane_det/tools/openlane_config.py'
     configs = load_config_module(config_file)
     dataset = configs.val_dataset()
+    print("start enumerating")
     for item in dataset:
+        # print("{}, {}".format(item[1][0], item[1][1]))
         continue
+    print("done")
