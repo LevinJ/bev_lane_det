@@ -12,7 +12,7 @@ train_image_paths = '/home/levin/workspace/data/lanes/images/training'
 val_gt_paths = '/home/levin/workspace/data/lanes/lane3d_1000_v1.2/lane3d_1000/validation'
 val_image_paths = '/home/levin/workspace/data/lanes/images/validation'
 
-model_save_path = "/dataset/model/openlane"
+model_save_path = "/home/levin/workspace/data/model/openlane"
 
 input_shape = (576,1024)
 output_2d_shape = (144,256)
@@ -24,7 +24,7 @@ meter_per_pixel = 0.5 # grid size
 bev_shape = (int((x_range[1] - x_range[0]) / meter_per_pixel),int((y_range[1] - y_range[0]) / meter_per_pixel))
 
 loader_args = dict(
-    batch_size=64,
+    batch_size=16,
     num_workers=12,
     shuffle=True
 )
